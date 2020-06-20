@@ -1,11 +1,12 @@
 # README
 
+*参考サイト
+https://cyllabus.jp/courses/LVlXWNb8GcWTKy8x1gHS5g
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
-*参考サイト
-https://cyllabus.jp/courses/LVlXWNb8GcWTKy8x1gHS5g
 
 * Ruby version
 
