@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :users
   # get 'sessions/new'
   #get 'registrations/new'
   resources :registrations, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
+  resources :users, only: [:index, :show]
 
   root to: 'registrations#new'
 
