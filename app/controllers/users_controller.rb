@@ -13,6 +13,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def favorites
+    @user = User.find(params[:id])
+  end
+
   # GET /users/new
   def new
     @user = User.new
