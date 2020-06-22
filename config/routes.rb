@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  get 'settings/edit'
   resources :users
   # get 'sessions/new'
   #get 'registrations/new'
   resources :registrations, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
+  resources :settings, only: [:edit, :update]
   resources :users, only: [:index, :show]
 
   root to: 'registrations#new'

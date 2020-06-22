@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :require_login, only: [:index, :show]
 
   # GET /users
   # GET /users.json
