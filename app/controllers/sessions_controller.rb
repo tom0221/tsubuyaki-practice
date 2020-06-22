@@ -9,11 +9,16 @@ class SessionsController < ApplicationController
   	password	= params_user[:password]
 
   	if login(email, password)
-  		redirect_to root_url, notice: "successfully logged in"
+  		redirect_to root_url, notice: "ログインしました"
   	else
   		@user = User.new(email: email)
   		render :new
   	end
+  end
+
+  def destroy
+    logout
+    redirect_to root_url, notice: "サインアウトしました"
   end
 
 
