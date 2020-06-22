@@ -66,3 +66,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sorcery'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+
+#ユーザー一覧に必要
+ gem 'record_tag_helper', '~> 1.0'
