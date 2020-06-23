@@ -1,7 +1,8 @@
-= div_for @tweet, class: "list-group-item" do |t|
+/ _tweet.html.haml
+= div_for @tweets, class: "list-group-item" do |t|
 	%h4.user
 		%span.user-name
-			= link_to t.user.name, user_path(t.user)
+			= link_to t.user.name, user_path(t.user.id)
 		%span.user-id
 			@#{t.user.name}
 		%span.time.pull-right
