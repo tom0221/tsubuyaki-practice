@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :tweets
+
   get 'settings/edit'
   resources :users
   # get 'sessions/new'
@@ -21,7 +21,6 @@ Rails.application.routes.draw do
 
   root to: 'registrations#new'
 
-  resources :user_s
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 

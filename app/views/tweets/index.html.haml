@@ -11,6 +11,6 @@
             .btn-group
               = link_to "すべてのつぶやき", tweets_path, class: "active btn btn-primary"
               = link_to "フォローしている人のつぶやき", timeline_tweets_path, class: "btn btn-default"
-          = render partial: "users/tweet", collection: @tweets
+          = render partial: "users/tweet", tweets: @tweets
 
 
